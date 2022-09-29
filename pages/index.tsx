@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Experience from "../components/Experience";
@@ -38,6 +39,15 @@ const Home: NextPage = () => {
       <section className="snap-start" id="contact">
         <Contact />
       </section>
+
+      <Link href="#hero">
+        <footer className="sticky bottom-5 w-full cursor-pointer">
+          <div className="flex items-center justify-center">
+            <Image src="" alt="" className="h-10 w-10 rounded-full filter gratscale hover:grayscale-0"/>
+            <p>Boulate Kwamboka</p>
+          </div>
+        </footer>
+      </Link>
     </div>
   );
 };
