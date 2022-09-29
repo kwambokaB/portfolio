@@ -12,14 +12,14 @@ function Skills({}: Props) {
         Hover over a skill for current proficiency
       </h3>
       <motion.div className="grid grid-cols-4 gap-5">
-        <Skill/>
-        <Skill/>
-        <Skill/>
-        <Skill/>
-        <Skill/>
-        <Skill/>
-        <Skill/>
-        <Skill/>
+        <Skill directionLeft={false}/>
+        <Skill directionLeft={false}/>
+        <Skill directionLeft={false}/>
+        <Skill directionLeft={false}/>
+        <Skill directionLeft={false}/>
+        <Skill directionLeft={false}/>
+        <Skill directionLeft={false}/>
+        <Skill directionLeft={false}/>
 
       </motion.div>
     </motion.div>

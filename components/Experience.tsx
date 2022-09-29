@@ -13,7 +13,7 @@ function Experience({}: Props) {
       className="section-component-div"
     >
       <h3 className="section-header">Experience</h3>
-      <div className="w-full flex snap-x-5 overflow-x-scroll p-10 snap-x snap-mandatory">
+      <div className="w-full flex snap-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/50">
         <ExperienceCard />
         <ExperienceCard />
         <ExperienceCard />
