@@ -56,9 +56,15 @@ function About({}: Props) {
           make a difference.
         </p>
 
+        <a target="_blank" href='https://kwambokab.hackerresume.io/343d051a-a332-4907-813b-d9e4fe732420' rel="noopener noreferrer">
         <p className="text-2xl text-center md:text-left cursor-pointer">
-          <span className="underline decoration-[#FF647F]/50">Resume</span>
+          <span className="underline decoration-[#FF647F]/50">
+            Resume</span>
         </p>
+        </a>
+        {/* <iframe src="/files/Boulateresume.pdf" style={{width:'100%', height:'100%'}} frameborder="0"></iframe>
+   */}
+
       </div>
     </motion.div>
   );
