@@ -29,20 +29,22 @@ function Contact({}: Props) {
       <div>
         <h4 className="text-4xl font-semibold text-center">
           I've got what you need.{" "}
-          <span className="decoration-[#f7ab0a]/50 underline">Let's Talk</span>
+          <span className="decoration-[#FF647F]/50 underline">Let's Talk</span>
         </h4>
         <div className="space-y-10 py-10">
+          
+          
+          <div className="contact-div">
+            <EnvelopeIcon className="contact-icon" />
+            <p className="text-2xl">boulatekwamboka@gmail.com</p>
+          </div>
           <div className="contact-div">
             <PhoneIcon className="contact-icon" />
-            <p className="text-2xl">+2545678905678</p>
+            <p className="text-2xl">+254729484949</p>
           </div>
           <div className="contact-div">
             <MapPinIcon className="contact-icon" />
             <p className="text-2xl">Nairobi, Kenya</p>
-          </div>
-          <div className="contact-div">
-            <EnvelopeIcon className="contact-icon" />
-            <p className="text-2xl">boulatekwamboka@gmail.com</p>
           </div>
         </div>
 
@@ -64,7 +66,7 @@ function Contact({}: Props) {
           {...register('message')}
           placeholder="Message" className="contact-input" />
           <button
-            className="bg-[#f7ab0a] py-5 px-10 rounded-md text-black font-bold text-lg"
+            className="bg-[#FF647F] py-5 px-10 rounded-md text-black font-bold text-lg"
             type="submit"
           >
             Submit

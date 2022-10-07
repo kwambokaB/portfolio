@@ -5,22 +5,29 @@ import Link from "next/link";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Experience from "../components/Experience";
-import Header from "../components/Header";
+// import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import styles from "../styles/Home.module.css";
+import dynamic from 'next/dynamic'
+
+const DynamicHeader = dynamic(() => import('../components/Header'), {
+  suspense: true,
+})
+
 
 const Home: NextPage = () => {
+  
   return (
-    <div className="bg-[rgb(36,36,36)] text-white h-screen  snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar-track-gray-400/20 scrollbar scrollbar-thumb-[#f7ab0a]/50">
+    <div className="bg-[rgb(36,36,36)] text-white h-screen  snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar-track-gray-400/20 scrollbar scrollbar-thumb-[#FF647F]/50">
       <Head>
         <title>Boulate Kwamboka</title>
         <meta name="description" content="Boulate's portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <DynamicHeader />
       <section id="hero" className="snap-start">
         <Hero />
       </section>

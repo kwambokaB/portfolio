@@ -3,9 +3,14 @@ import { motion } from "framer-motion";
 
 type Props = {
   directionLeft: boolean;
+  data: {
+    icon: string;
+    Percentage: string;
+    name: string
+  }
 };
 
-function Skill({ directionLeft }: Props) {
+function Skill({ directionLeft, data }: Props) {
   return (
     <div className="group relative flex cursor-pointer">
       <motion.img
@@ -15,13 +20,13 @@ function Skill({ directionLeft }: Props) {
         }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}
-        className="rounded-full border border-gray-500 w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out"
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+        className="rounded-full border border-gray-500 h-20 w-20 md:h-24 md:w-24 xl:w-28 xl:h-28 filter group-hover:grayscale transition duration-300 ease-in-out"
+        src={data.icon}
         alt="skill icon"
       />
-      <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:h-28 md:w-28 xl:w-32 xl:h-32 rounded-full z-0">
+      <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-20 w-20 md:h-24 md:w-24 xl:w-28 xl:h-28 rounded-full z-0">
         <div className="flex items-center justify-center h-full">
-          <p className="text-3xl font-bold text-black opacity-100">100%</p>
+          <p className="text-1xl font-bold text-black opacity-100">{`${data.name} ${data.Percentage}`}</p>
         </div>
       </div>
     </div>
